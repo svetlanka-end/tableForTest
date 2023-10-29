@@ -29,8 +29,10 @@ function ChoiceApiButton({ arrApi, setApi }: Props) {
         Выбор Api
       </button>
       <div className={classs}>
-        {arrApi.map((nameApi: any) => (
-          <p onClick={() => handleClickApiLink(nameApi)}>{nameApi}</p>
+        {arrApi.map((nameApi, index) => (
+          <p key={index} onClick={() => handleClickApiLink(nameApi)}>
+            {nameApi}
+          </p>
         ))}
       </div>
     </div>
