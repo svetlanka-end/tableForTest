@@ -1,0 +1,66 @@
+.titles {
+    height: 60px;
+    max-width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+
+    column-gap: 20px;
+    align-items: center;
+    padding: 0 20px 0 30px;
+
+}
+
+.title {
+    font-size: 18px;
+    line-height: 16px;
+    overflow: hidden;
+    margin: 0;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.title:hover {
+    opacity: 0.3;
+}
+
+.listContainer {
+    padding: 0;
+    margin: 0
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.nextButton {
+    font-size: 18px;
+    line-height: 16px;
+    cursor: pointer;
+    background-color: #1a1a1a;
+    width: 100px;
+    height: 40px;
+    margin: 15px;
+    border: none;
+    border-radius: 7px;
+}
+
+.returnButton {
+    font-size: 18px;
+    line-height: 16px;
+    cursor: pointer;
+    background-color: #1a1a1a;
+    width: 100px;
+    height: 40px;
+    margin: 15px;
+    border: none;
+    border-radius: 7px;
+}
+
+.pageNumber {
+    text-align: center;
+    margin: 0 0 15px 0;
+}
